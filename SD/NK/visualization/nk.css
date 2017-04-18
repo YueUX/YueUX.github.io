@@ -1,0 +1,446 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+}
+
+body,html{
+	height:100%;
+	width: 100%;
+
+}
+
+.globalContainer {
+	font-family: "Open Sans";
+	background:#282C37;
+
+	position: relative;
+
+	height: 100%;
+	width: 100%;
+}
+
+.buttonContainer{
+	position: absolute;
+	top: 20%;
+	left: 2%;
+}
+
+.viewButtonRow td:first-child{
+	opacity: 0;
+	color:white;
+
+	-webkit-transition: opacity 0.5s ease-in-out
+}
+
+.viewButtonRow:hover td:first-child{
+	opacity: 0.5;
+}
+
+.viewButtonRow.active td:first-child{
+	opacity: 1;
+}
+
+.viewButton{
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: 300;
+	background: transparent;
+	color:#eee;
+	
+	cursor: pointer;
+
+	margin: 5% 5%;
+}
+
+.visualContainer{
+	position: absolute;
+	right: 2%;
+	top:5%;
+
+	height: 95%;
+}
+
+.svgContainer{
+	background: none;
+
+	width: 1000px;
+	/*height: 350px;*/
+	overflow: scroll;
+	/*visibility: hidden;*/
+}
+
+.keywordTable{
+	background: none;
+}
+
+.keywordTable div{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.keywordTable div#pol{
+	border-right: 1px dashed white;
+}
+
+.keywordTable div#his{
+	border-right: 1px dashed white;
+}
+
+
+.keywordTextContainer{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+
+	background: rgba(0,0,0,0.2);
+	width: 80%;
+	height: 100%;
+}
+
+.overlayTextContainer{
+	position: absolute;
+	bottom:5%;
+	right: 10%;
+	width: 80%;
+}
+
+.overlayTextContainer .keywordDIV {	
+	background: white;	
+	position: relative;
+	padding: 3em 1em 1em 1em;
+
+	color: #666;
+}
+
+.overlayTextContainer .textContainer{
+	height: 300px;
+	overflow: scroll;
+}
+
+.overlayTextContainer .keyword{
+	color: white;
+}
+
+.overlayTextContainer .headerContainer{
+	position: absolute;
+	top: -10%;
+	width:100%; 
+}
+
+.overlayTextContainer .headerContent{
+	
+	width: 30%;
+	margin: 0 auto;
+	padding: 0.2em;
+
+	color:white;
+
+	font-family: "Oswald";
+	font-weight:400;
+	font-size:2em;
+
+	text-align:center;
+	text-transform: uppercase;
+
+}
+
+.overlayTextContainer .closeButton{
+	position: absolute;
+	top: -25%;
+	right: 1%;
+	font-family: "Oswald";
+	font-size: 5em;
+	color: white;
+
+	cursor: pointer;
+
+	opacity: 0.4;
+}
+.overlayTextContainer .closeButton:hover{
+	opacity: 0.7;
+}
+
+.legendContainer{
+	position: absolute;
+	bottom:10%; 
+	left:4%;
+}
+
+.legendContainer .legendDIV{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+
+.legendContainer .legendRow{
+	
+}
+
+.legendContainer .legendText{
+	display: inline-block;
+	font-weight:300;
+	font-size: 0.8em;
+	text-transform:uppercase;
+	margin:0.5em;
+	background: transparent!important;
+}
+
+
+
+
+
+
+/******************************
+SVG Styles
+******************************/
+
+.pol {
+	fill:#90A449;
+	background:#90A449;
+	stroke:#90A449;
+	color:#90A449;
+}
+
+.his {
+	fill:#ECBF36;
+	background:#ECBF36;
+	stroke:#ECBF36;
+	color:#ECBF36;
+}
+
+.food {
+	fill:#C63146;
+	background:#C63146;
+	stroke:#C63146;
+	color:#C63146;
+}
+
+.news {
+	stroke:#E349A0;
+	fill:#E349A0;
+	background:#E349A0;
+	color:#E349A0;
+}
+
+.pol.overlap {
+	fill:#586827;
+	background:#586827;
+	stroke:#586827;
+	color:#586827;
+}
+
+.his.overlap {
+	fill:#C69534;
+	background:#C69534;
+	stroke:#C69534;
+	color:#C69534;
+}
+
+.food.overlap {
+	fill:#853745;
+	background:#853745;
+	stroke:#853745;
+	color:#853745;
+}
+
+.bar {
+	stroke-width:0;
+}
+
+.colLine{
+	stroke:#666;
+	stroke-width:1;
+}
+
+#mainSVG .axis path,line{
+	fill:none;
+	stroke:#999;
+	stroke-width:1;
+}
+
+#mainSVG .axis .domain{
+	stroke:none;
+}
+
+#mainSVG .axis text{
+	fill:#eee;
+	font-weight: 100;
+	font-size: 0.8em;
+}
+
+#mainSVG .axis.line{
+	visibility: collapse;
+}
+
+#mainSVG .colLine{
+	stroke:#eee;
+	stroke-dasharray:3,3;
+}
+
+/*.wordCloudSVG{
+	float:left;
+}
+
+.wordCloudText{
+	text-anchor:middle;
+}*/
+
+/*.overlapLine{
+	stroke:#ED69A5;
+	stroke-width:1.5px;
+	fill:none;
+}*/
+
+#mainSVG .lineGraph .axis text{
+	font-size: 0.5em;
+}
+
+#mainSVG .lineGraph .axis line{
+	stroke: #999;
+	stroke-width:1px;
+	fill:none;
+	stroke-dasharray: 3,3;
+}
+
+#mainSVG .lineGraph .axis path{
+	fill:none;
+	stroke:none;	
+}
+
+#mainSVG .lineGraph .axis.x g:last-of-type{
+	visibility: hidden;
+}
+
+
+.keywordTable p{
+	border-width:0px;
+	word-break:break-word;
+	text-align: justify;
+	line-height: 150%;
+	color:#ccc;
+}
+
+.keywordTable span{
+	border: 2px solid transparent;
+	border-radius: 10px;
+	padding: 2px 10px;
+	font-size: 0.6em;
+
+	color: black!important;
+
+	cursor: pointer;
+
+	-webkit-transition: border-color 0.3s ease-in-out,color 0.3s ease-in-out;
+}
+
+.keywordTable span:hover{
+	border-color: white;
+	color: white!important;
+}
+
+
+.subGraph path{
+	stroke-width:1;
+	fill:none;
+}
+
+.subGraph .subText{
+	text-anchor:middle;
+	fill:#eee;
+	
+}
+
+
+
+
+
+
+.pieGraph path{
+	stroke:#333;
+	stroke-width:1px;
+	stroke-dasharray:5,5;
+}
+
+.pieGraph .caption line{
+	stroke-width:1;
+	stroke:white;
+}
+
+.pieGraph .caption .captionTitle{
+	font-family: "Oswald";
+	font-weight: 400;
+	font-size:1.5em;
+
+	fill:#fff;
+	text-anchor:middle;
+	text-transform: uppercase;
+
+}
+
+.pieGraph .caption .captionNum{
+	font-weight: 100;
+	
+	fill:#ccc;
+}
+
+.pieGraph .pol .back{
+	fill: #8FA449;
+}
+
+.pieGraph .pol .fore.media{
+	fill:#586827;
+}
+
+.pieGraph .pol .fore.his{
+	fill:#ECBF36;
+}
+
+.pieGraph .his .back{
+	fill:#ECBF36;
+}
+
+.pieGraph .his .fore.media{
+	fill:#C79434;
+}
+
+.pieGraph .his .fore.food{
+	fill:#D9364D;
+}
+
+.pieGraph .his .fore.pol{
+	fill:#8FA449;
+}
+
+.pieGraph .food .back{
+	fill:#D9364D;
+}
+
+.pieGraph .food .fore.media{
+	fill:#863845;
+}
+
+.pieGraph .food .fore.his{
+	fill:#ECBF36;
+}
+
+.pieGraph .obj.back{
+	fill: #E44AA1;
+}
+
+.pieGraph .obj.fore{
+	fill:#3B5B92;
+}
+
+.obj.back{
+	fill: #E44AA1;
+	background: #E44AA1;
+	color: #E44AA1;
+}
+
+.obj.fore{
+	fill:#3B5B92;
+	background: #3B5B92;
+	color: #3B5B92;
+}

@@ -1,0 +1,162 @@
+body {
+  background-color: #E5E7E5;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin:0;
+  padding:0;
+  height: auto;
+}
+
+p {
+	 font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+p.slider {
+	margin-top: 2px;
+}
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin-top: 7px;
+    height: 3px;
+    width:90px;
+}
+
+hr {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: inset;
+    border: none;
+    height: 1px;
+    border-color: #B9B9B9;
+}
+
+#legend{
+	margin-left: 15px;
+}
+
+.legend {
+	float: left;
+}
+
+.legend.text{
+	font: 10px Helvetica, Arial, sans-serif;
+	margin-top: 2.5px;
+	margin-left: 10px;
+}
+
+text {
+ font: 10px Helvetica, Arial, sans-serif;
+ color: grey;
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 6px;
+    height: 15px;
+   -moz-border-radius:    2px;
+   -webkit-border-radius: 2px;
+   border-radius:         2px;
+}
+
+#rangeOutput {
+	margin-top: -8px;
+	margin-left: 8px;
+	color: white;
+}
+
+.each {
+	height: 30px;
+	margin: 5px;
+}
+.slider {
+	float: left;
+}
+.left-bar {
+	font: 12px Helvetica, Arial, sans-serif;
+}
+
+.title {
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.glyphicon {
+	font-size: 14px;
+}
+
+.checkbox-caption {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: -10px;
+}
+
+.custom-checkbox {
+	width: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	position: relative;
+}
+
+.custom-checkbox label {
+	cursor: pointer;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 0;
+  	left: 0;
+	background: #1F202D;
+	border:1px solid white;
+}
+.custom-checkbox label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	border:1px solid white;
+	background: transparent;
+	background: white;
+	border-top: none;
+	border-right: none;
+
+}
+
+.custom-checkbox label:hover::after {
+	opacity: 0.5;
+}
+
+.custom-checkbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+.left-bar {
+  background-color: #1F202D;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.right-bar {
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.title {
+  font-size: 18px;
+}

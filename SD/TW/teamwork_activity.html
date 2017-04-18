@@ -1,0 +1,110 @@
+<!Doctype html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="test.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="circle.css">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="title main">
+				Teamwork Activity
+			</div>
+			<div  class="viewControl main">
+				<table>
+					<tr>
+						<td>
+							<div class="toggleButton modeButton" id="separateButton" onclick="setCumulative(false)">Separated</div>							
+							<div class="toggleButton modeButton highlighted" id="accumulativeButton" onclick="setCumulative(true)">Accumulative</div>
+							<div class="toggleButton" id="expandButton" onclick="toggleExpand()">Expand</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="speedRange">
+								<span>Slow</span>
+								<input type="range" max="0.9" min="-0.9" value="0" step="0.1"onchange="changeSpeed(this.value)"/>
+								<span>Fast</span>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="svgContainer main">
+				<svg/>
+				<table class="control">
+				<tr>
+					<td>
+						<table class="legend">
+							<tr>
+								<td>
+									<div class="sampleCircle person1"></div>
+									<span>Member A</span>
+								</td>
+								<td>
+									<div class="sampleCircle person2"></div>
+									<span>Member B</span>
+								</td>
+								<td>
+									<div class="sampleCircle person3"></div>
+									<span>Member C</span>
+								</td>
+								<td>
+									<div class="sampleCircle person4"></div>
+									<span>Member D</span>
+								</td>
+								<td>
+									<div class="sampleCircle person5"></div>
+									<span>Member E</span>
+								</td>
+								<td id="buttonColumn">
+									<div class="button" onclick="prevDay()">
+										<img src="resources/prev.png"/>
+									</div>
+									<div class="button" id="playButton" onclick="toggleStartStop()">
+										<img src="resources/play.png"/>
+									</div>
+									<div class="button" onclick="nextDay()">
+										<img src="resources/next.png"/>
+									</div>
+									<div class="button" onclick="resetAnimation()">
+										<img src="resources/replay.png"/>
+									</div>
+								</td>
+							</tr>
+						</table>						
+						<!-- <button onclick="startAnimation()">Start</button>		
+						<button onclick="stopAnimation()">Stop</button> -->
+					</td>
+				</tr>
+				
+				<tr  style="opacity:0">
+					<td>
+						<div>	
+							<span id="timerCount">0</span>
+							<span id="totalDayCount">0</span>
+						</div>
+					</td>
+				</tr>
+			</table>
+			</div>
+
+			<div class="time main">
+				<p id="stage">
+					<span>Stage</span>
+					<span id="stageCount">0</span>
+				</p>
+				<p id="day">
+					<span>Day</span>
+					<span id="dayCount">0</span>
+				</p>
+			</div>
+			
+		</div>
+		<script src="circle.js"></script>	
+	</body>
+</html>

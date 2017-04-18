@@ -1,0 +1,330 @@
+
+*{
+	margin: 0px;
+	padding:0px;
+	border-width: 0px;
+}
+
+body,html{
+	width:100%;
+	height: 100%;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+}
+
+.main{
+	width: 100%;
+	position: absolute;
+	font-family: "PT sans",sans-serif;
+}
+
+.title{
+	width: auto;
+	
+	font-size: 1.8em;
+	text-transform: uppercase;
+	margin: 1em;
+	color: #444;
+}
+
+.time{
+	top:10%;
+
+	text-align: center;
+	text-transform: uppercase;
+	color: #ddd;
+	opacity: 1.0;
+	line-height: 3em;
+}
+
+.time #stage{
+	font-size: 2em;
+	letter-spacing: 0.2em;
+}
+
+.time #day{
+	font-size: 2em;
+}
+
+.control{
+	width: 80%;
+	height: 10%;
+	margin: 10px 10%;
+}
+
+.sampleCircle{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;	
+	
+	margin-right: 3px;
+
+	-webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+
+    border:transparent solid 5px;
+
+    -webkit-transition:border 0.3s ease-in-out;
+  	-moz-transition:border 0.3s ease-in-out;
+  	-o-transition:border 0.3s ease-in-out;
+  	transition:border 0.3s ease-in-out;
+
+}
+
+.legend{
+	width: 100%;	
+}
+.legend{
+	text-align: center;
+}
+
+.legend span{
+	vertical-align: middle;
+	color: #777;
+}
+
+.control .button{
+	display: inline-block;
+	font-size: 1.2em;
+	color: #666;
+	text-transform: uppercase;
+	//padding: 0.2em;
+	//margin-top: 10px;
+	margin-right: 0px;
+	text-align: center;
+
+	width: 3em;
+
+	background: rgba(0,0,0,0);
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    opacity: 0.3;
+
+    -webkit-transition:all 0.5s ease-in-out;
+  	-moz-transition:all 0.5s ease-in-out;
+  	-o-transition:all 0.5s ease-in-out;
+  	transition:all 0.5s ease-in-out;
+}
+
+.control #buttonColumn{
+	padding: 2px;
+}
+
+.control .button:hover{
+	//background: rgba(0,0,0,0.3);
+	opacity: 0.7;
+}
+
+.control img{
+	height: 2em;
+	vertical-align: middle;
+}
+
+.control input{
+	width:45%;
+}
+
+.control .speedRange{
+	display: inline;	
+}
+
+
+.viewControl{
+	width: auto;
+	right: 2%;
+	top: 2%;
+	z-index: 2;
+}
+
+.viewControl .toggleButton{
+	
+	text-align: center;
+	vertical-align: middle;
+	width: 8em;
+	padding: 0.5em;
+	float: left;
+	margin: 5px;
+
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #c0c0c0;
+	color: white;
+
+	font-size: 1em;
+	font-weight: 100;
+
+	cursor: pointer;
+
+	-webkit-transition:all 0.5s ease-in-out;
+  	-moz-transition:all 0.5s ease-in-out;
+  	-o-transition:all 0.5s ease-in-out;
+  	transition:all 0.5s ease-in-out;
+
+}
+
+.viewControl .toggleButton:hover{
+	background: #7b7b7b;
+}
+
+.viewControl .toggleButton:focus{
+	background: black;
+}
+
+.viewControl .speedRange{
+	padding: 5px 0px;
+}
+
+
+.viewControl .speedRange span{
+	color: #7b7b7b;
+	font-size: 1.5em;	
+}
+
+.viewControl .speedRange input{
+	margin: 0px 25px;
+	width: 55%;
+	cursor: pointer;
+}
+
+.toggleButton.modeButton{
+	width: 6em;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.toggleButton.modeButton.highlighted{
+	background: #7b7b7b;
+}
+
+
+
+.svgContainer{
+	top: 13%;
+	
+}
+
+svg{
+	display: block;
+	//background: #ccc;
+	margin: auto;
+	width: 1000px;
+	height: 450px;
+	z-index: -1;
+}
+
+
+.tooltip{
+	padding:10px;
+	pointer-events:none;
+	background: rgba(0,0,0,0.6);
+}
+
+.tooltip .toolTipTime{
+	color: #fff;
+}
+
+.tooltip .toolTipContent{
+	color: #ccc;
+}
+
+
+.person1{
+	fill: #697dbd;
+	background: #697dbd;
+}
+.person2{
+	fill: #e968a6;
+	background: #e968a6;
+}
+.person3{
+	fill: #28baa3;
+	background: #28baa3;
+}
+.person4{
+	fill: #f9d027;
+	background: #f9d027;
+}
+.person5{
+	fill: #ee6723;
+	background: #ee6723;
+}
+
+.topM{
+	//border: #9CDBF6 solid 5px;
+}
+
+.topA{
+	border: #FCBE96 solid 5px;
+}
+
+
+.topM.topA{
+	//border: #D49CF6 solid 5px;
+}
+/*.stage1{
+	fill: #697dbd;
+}
+
+.stage2{
+	fill: #e968a6;
+}
+
+.stage3{
+	fill: #28baa3;
+}
+
+.stage4{
+	fill: #f9d027;
+}*/
+
+.axis path{
+	stroke:#333;
+	fill:none;
+}
+
+.axis text{
+	color:#333;
+	font-size: 10px;
+}
+
+.verticalLine.middle{
+	stroke: #777;
+	stroke-width:0.5;
+	stroke-dasharray:5,5;
+}
+
+.verticalLine.edge{
+	stroke:#333;
+	stroke-width:1;
+}
+
+#stageCount, #dayCount{
+	font-weight: bold;
+	color: #000;
+}
+
+.axisCanvas .backgroundRect{
+	fill:white;
+}
+
+/*svg{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
+.time{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}*/
