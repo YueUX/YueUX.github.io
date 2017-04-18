@@ -951,7 +951,7 @@ section:nth-of-type(even) {
   padding-right: 0px;
 }
 .no-pad-bottom {
-  padding-bottom: 0px;
+  padding-bottom: 0px !important;
 }
 .space-top-small {
   margin-top: 20px !important;
@@ -2751,11 +2751,13 @@ blockquote {
   border-bottom: 2px solid #3498db;
 }
 .project {
-	height: 420px;
+	/*height: 380px;*/
+	height:28vw;
 }
 
 .project-tall{
-		height: 420px;
+		/*height: 420px;*/
+		height: 33vw;
 		/*height:138/4vw;*/
 }
 .project.col-md-4 {

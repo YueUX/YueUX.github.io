@@ -154,6 +154,14 @@ svg#bigTriangleShadow{
   margin-top: 0px !important;
 }
 
+.no-pad-top {
+  padding-top: 0px !important;
+}
+
+.no-pad-bottom {
+  padding-bottom: 0px !important;
+}
+
 .hometitle4 {
   font-size: 40px;
   line-height: 70px;
