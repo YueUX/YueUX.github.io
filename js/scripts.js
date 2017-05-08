@@ -149,7 +149,7 @@ $(document).ready(function(){
 	// Slider Initializations
 
 	$('.hero-slider').flexslider({});
-	$('.image-slider').flexslider({ animation: "slide", 'directionNav': true});
+	$('.image-slider').flexslider({ animation: "slide", 'directionNav': true, slideshowSpeed:3000, animationSpeed: Modernizr.touch ? 400 : 800});
 	$('.testimonials-slider').flexslider({ directionNav: true });
 
 	// Slide Sizes
@@ -162,6 +162,10 @@ $(document).ready(function(){
 		$(this).css('height', $(window).height());
 	});
 
+	// $(".flexslider").flexslider({
+	//   animation: "slide",
+	//   animationSpeed: Modernizr.touch ? 400 : 1000
+	// });
 
 	// Feature Selector
 
