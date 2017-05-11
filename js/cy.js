@@ -5,9 +5,9 @@ $( document ).ready(function() {
     function showNextMdp(){
 
           ++mdpIndex;
-          mdps.eq(mdpIndex % mdps.length)
-          .velocity('transition.slideRightIn',1800)
-            .velocity('transition.slideRightOut', 800, showNextMdp);
+          mdps.eq(mdpIndex % (mdps.length-2))
+          .velocity('transition.slideRightIn',1500)
+            .velocity('transition.slideRightOut', 500, showNextMdp);
     }
     showNextMdp();
 

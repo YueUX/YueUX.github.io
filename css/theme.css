@@ -2752,12 +2752,12 @@ blockquote {
 }
 .project {
 	/*height: 380px;*/
-	height:28vw;
+	height:32vw;
 }
 
 .project-tall{
 		/*height: 420px;*/
-		height: 33vw;
+		height: 36vw;
 		/*height:138/4vw;*/
 }
 .project.col-md-4 {
@@ -2816,7 +2816,7 @@ blockquote {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 0px;
+	top: 1px;
 	background-color: rgba(0, 0, 0, 0.8);
 	text-align: center;
 	-webkit-transition: all .3s ease;
