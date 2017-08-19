@@ -52,7 +52,82 @@ section::after {
 	    -moz-osx-font-smoothing: grayscale;
 			height: 100%;
 
+/*///grid*/
+			background:
+        linear-gradient(-90deg, rgba(0,0,0,.02) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.02) 1px, transparent 1px),
+        linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.01) 1px, transparent 1px),
+        linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+        linear-gradient(-90deg, #aaa 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+        linear-gradient(#aaa 1px, transparent 1px),
+        #f2f2f2;
+    background-size:
+        4px 4px,
+        4px 4px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px;
+
+
+/*///dot*/
+		/*background-size: 40px 40px;
+		background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);*/
+
 }
+
+
+/*////dot grid*/
+#wrapper-fg{
+	background:
+        linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px),
+        linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+        linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+        linear-gradient(-90deg, #aaa 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+        linear-gradient(#aaa 1px, transparent 1px),
+        #f2f2f2;
+    background-size:
+        4px 4px,
+        4px 4px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px;
+}
+
+
+/*////image over gradient*/
+#wrapper-fg2{
+  width: 100%;
+  height: 100%;
+  background: url('http://www.yueux.com/img/hero-bg.gif') left bottom no-repeat;
+	-moz-transform: scaleX(-1);
+			 -o-transform: scaleX(-1);
+			 -webkit-transform: scaleX(-1);
+			 transform: scaleX(-1);
+  background-size: contain;
+}
+
+#wrapper-fg2:before {
+	content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-image: linear-gradient(45deg, #f2efed 80%, #d8d7d4 100%);
+opacity: .6;
+}
+
 
 #wrapper {
     width: 100%;
@@ -62,11 +137,11 @@ section::after {
 }
 
 #wrapper-h1 {
-    text-transform: uppercase;
-    transform: translate(-76%, -100%) skew(10deg) rotate(-10deg);
+    /*text-transform: uppercase;*/
+    /*transform: translate(-76%, -100%) skew(10deg) rotate(-1deg);*/
     font-size: 10vw;
-    top: 50%;
-    left: 50%;
+    top: 18%;
+    left: 20%;
     margin: 0;
     position: absolute;
     text-rendering: optimizeLegibility;
@@ -84,9 +159,9 @@ section::after {
     top: -4.8%;
     overflow: hidden;
     width: 100%;
-    height: 50%;
+    height: 56%;
     color: #fbf7f4;
-    transform: translate(1.6vw, 0) skew(-13deg) scale(1, 1.2);
+    transform: translate(1.8vw, 0.1vw) skew(-16deg) scale(1, 1.2);
     z-index: 2;
     text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.2);
 }
@@ -100,17 +175,17 @@ section::after {
     width: 100%;
     height: 100%;
     z-index: 1;
-    color: #d3cfcc;
-    transform: translate(0vw, 0) skew(13deg) scale(1, 0.8);
-    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+    color: #e6e2df;
+    transform: translate(0.1vw, 0.2vw) skew(3deg) scale(1, 0.9);
+    clip-path: polygon(0 56%, 100% 56%, 100% 100%, 0% 100%);
     text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.3);
 }
 
 #wrapper-sub {
-    transform: translate(-124%, 22%) skew(10deg) rotate(-10deg);
+    /*transform: translate(-70%, -20%) skew(10deg) rotate(0deg);*/
     font-size: 2.3vw;
-    top: 50%;
-    left: 50%;
+    top: 44%;
+    left: 20%;
     margin: 0;
     position: absolute;
     text-rendering: optimizeLegibility;
@@ -123,18 +198,18 @@ section::after {
 
 
 #wrapper-p {
-    transform: translate(-61%, -83%) skew(10deg) rotate(-10deg);
+    /*transform: translate(-61%, -83%) skew(10deg) rotate(-10deg);*/
     font-size: 10vw;
 		font-family:"open sans";
-    top: 50%;
-    left: 50%;
+    top: 6%;
+    left: 20%;
     margin: 0;
     position: absolute;
     text-rendering: optimizeLegibility;
     font-weight: 700;
     color: rgba(255, 158, 177, 0.5);
     text-shadow: 1px 4px 6px #e6e2df, 0 0 0 #66303a, 1px 4px 6px #e6e2df;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 		line-height: initial;
 }
 

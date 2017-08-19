@@ -5,9 +5,10 @@ $( document ).ready(function() {
     function showNextMdp(){
 
           ++mdpIndex;
-          mdps.eq(mdpIndex % (mdps.length-2))
+          mdps.eq(mdpIndex % (mdps.length-8))
           .velocity('transition.slideRightIn',1500)
-            .velocity('transition.slideRightOut', 500, showNextMdp);
+            .velocity('transition.fadeOut', 500, showNextMdp);
+            console.log(mdps.length)
     }
     showNextMdp();
 
@@ -15,32 +16,32 @@ $( document ).ready(function() {
       //ScrollMagic
 
     //hero scene
-    var controller = new ScrollMagic.Controller();
-
-    var smscene1 = new ScrollMagic.Scene({duration: 1000})
-      .setTween("#AIC", {y:600})
-      .addTo(controller);
-
-    var smscene1 = new ScrollMagic.Scene({duration: 800})
-        .setTween("#yuechen", {y:400})
-        .addTo(controller);
-
-
-    $(window).scroll(function(){
-      if($(document).scrollTop() > 300){
-        $('#AIC').css({'display': 'none'});
-      } else {
-        $('#AIC').css({'display': 'inherit'});
-      };
+    // var controller = new ScrollMagic.Controller();
+    //
+    // var smscene1 = new ScrollMagic.Scene({duration: 1000})
+    //   .setTween("#AIC", {y:600})
+    //   .addTo(controller);
+    //
+    // var smscene1 = new ScrollMagic.Scene({duration: 800})
+    //     .setTween("#yuechen", {y:400})
+    //     .addTo(controller);
 
 
-      if($(document).scrollTop() > 50){
-        $('#yuechen').fadeOut("slow");
-      } else {
-        $('#yuechen').fadeIn("slow");
-      };
-
-    });
+    // $(window).scroll(function(){
+    //   if($(document).scrollTop() > 300){
+    //     $('#AIC').css({'display': 'none'});
+    //   } else {
+    //     $('#AIC').css({'display': 'inherit'});
+    //   };
+    //
+    //
+    //   if($(document).scrollTop() > 50){
+    //     $('#yuechen').fadeOut("slow");
+    //   } else {
+    //     $('#yuechen').fadeIn("slow");
+    //   };
+    //
+    // });
 
 
 });
