@@ -2,13 +2,15 @@
 $( document ).ready(function() {
     var mdps = $(".mdp");
     var mdpIndex = -1;
+    // console.log(mdps.mdpIndex);
     function showNextMdp(){
 
           ++mdpIndex;
-          mdps.eq(mdpIndex % (mdps.length-8))
+          mdps.eq(mdpIndex % (mdps.length))
           .velocity('transition.slideRightIn',1500)
             .velocity('transition.fadeOut', 500, showNextMdp);
-            console.log(mdps.length)
+
+          // console.log(length);
     }
     showNextMdp();
 
@@ -49,18 +51,12 @@ $( document ).ready(function() {
 
 //Digital-branding title css tricks
 // JS for content editable trick from Chris Coyier
-var h1 = document.querySelector("#wrapper-h1");
-
-h1.addEventListener("input", function() {
-  this.setAttribute("data-heading", this.innerText);
-});
-// JS for content editable trick from Chris Coyier
-
-// var h1 = document.querySelector("h1");
+// var h1 = document.querySelector("#hero-text");
 //
 // h1.addEventListener("input", function() {
 //   this.setAttribute("data-heading", this.innerText);
 // });
+
 
 
 
