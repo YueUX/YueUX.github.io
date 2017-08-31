@@ -887,12 +887,12 @@ span.text-white a:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-animation: bounce 2s infinite ease-in-out;
-	animation: bounce 2s infinite ease-in-out;
+	-webkit-animation: bounce 1s infinite ease-in-out;
+	animation: bounce 1s infinite ease-in-out;
 }
 .double-bounce2 {
-  -webkit-animation-delay: -1s;
-  animation-delay: -1s;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
 }
 @-webkit-keyframes bounce {
   0%,
