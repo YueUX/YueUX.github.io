@@ -509,14 +509,14 @@ p {
 
 /*----------------------------------------- 6) Hero --------------------------------------------------*/
 #home {
-   background: linear-gradient(45deg, #eae3df 80%, #d8d7d4 100%);
+   background: linear-gradient(45deg, #eae3df 70%, #d8d7d4 100%);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-width: 100%;
-  min-height: 95%;
-  height: 99%;
+  min-height: 98%;
+  height: 100%;
   width: 100%;
   display: block;
 }
