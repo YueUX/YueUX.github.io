@@ -219,6 +219,10 @@
   //nav-active
   function onScroll(event){
     var scrollPosition = $(document).scrollTop();
+
+
+
+
     $('.menu-list a').each(function () {
       var currentLink = $(this);
       var refElement = $(currentLink.attr("href"));
@@ -230,6 +234,17 @@
         currentLink.removeClass("active");
       }
     });
+
+    console.log(scrollPosition);
+    var skillThresh = $('#home').height() + $('#skills-holder').height();
+    console.log(skillThresh);
+    
+    if (scrollPosition >= skillThresh) {
+        $("#skills").hide()
+    }
+    else {
+        $("#skills").show()
+    }
   }
 
 })(jQuery);

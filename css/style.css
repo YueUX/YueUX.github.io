@@ -1090,13 +1090,10 @@ ul.portfolio-image li .desc-sub{
   width: 100%;
 }*/
 
-#skills{
+.block-holder{
 
   display: inline-block;
   width: 100%;
-
-
-
    /* Set a specific height */
    min-height: 750px;
    /*height:100%;*/
@@ -1108,18 +1105,36 @@ ul.portfolio-image li .desc-sub{
    background-size: contain;*/
 }
 
-#about-content{
+#about{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  height:100vh;
+  width: 100vw;
+}
+
+#skills{
+    position:fixed;
+    z-index:-2;
+    top:0;
+    left:0;
+}
+#skill-content{
     position:fixed;
     top:0;
     right:0;
-    z-index:-1;
 }
-#about-img{
+#skill-img{
     position:fixed;
     top:0;
     left:0;
-    z-index:-1;
     height: 100%;
+}
+
+#footer{
+    position:fixed;
+    bottom:0px;
 }
 
 .bg-about {
