@@ -235,16 +235,11 @@
       }
     });
 
-    console.log(scrollPosition);
+    // console.log(scrollPosition);
     var skillThresh = $('#home').height() + $('#skills-holder').height();
-    console.log(skillThresh);
-    
-    if (scrollPosition >= skillThresh) {
-        $("#skills").hide()
-    }
-    else {
-        $("#skills").show()
-    }
+    // console.log(skillThresh);
+    if (scrollPosition >= skillThresh) {  $("#skills").hide(); }
+    else {  $("#skills").show();    }
   }
 
 })(jQuery);

@@ -719,7 +719,10 @@ ul.portfolio-image li {
 ul.portfolio-image-ux li {
   padding-top: 33%;
 }
-ul.portfolio-image-tangible li, ul.portfolio-image-ui li {
+ul.portfolio-image-ui li{
+    padding-top: 80%;
+}
+ul.portfolio-image-tangible li {
   padding-top: 27%;
 }
 
