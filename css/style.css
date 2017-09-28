@@ -697,6 +697,8 @@ p {
 .mfp-content{
   max-width:none !important;
   max-height:100vh !important;
+  height:100%;
+
 }
 
 ul.portfolio-image {
@@ -1152,7 +1154,7 @@ ul.portfolio-image li .desc-sub{
     height: 100%;
 }
 
-#footer{
+footer{
     position:fixed;
     bottom:0px;
 }
@@ -1177,6 +1179,25 @@ ul.portfolio-image li .desc-sub{
 }
 
 @media screen and (max-width: 767px) {
+
+  li.portfolio-image-short  {
+    padding-top: 65% !important;
+  }
+  li.portfolio-image-tall  {
+    padding-top: 100% !important;
+  }
+
+  #about{
+      position:relative;
+  }
+
+  footer{
+      position:relative !important;
+      bottom:0% !important;
+  }
+  .footer-img{
+    width:50%;
+  }
 
   #about-img{
       position:relative;
