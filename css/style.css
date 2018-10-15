@@ -165,11 +165,11 @@ img { max-width: 100%; }
 }
 /*-------- content --------*/
 .content-detail {
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 40px;
-  line-height: 30px;
+  line-height: 20px;
   font-size: 14px;
-  letter-spacing: 0.4px;
+  /* letter-spacing: 0.4px; */
 }
 .content-details {
   font-weight: 400;
@@ -553,7 +553,7 @@ p {
     }
 }
 .scrollmouse {
-    position: absolute;
+    /* position: absolute; */
     width: 75px;
     height: 92px;
     background-image: url(../img/gallery/scrolldown.png);
@@ -563,7 +563,8 @@ p {
     -webkit-animation: topToBottom 1.5s steps(44) 0s infinite;
     animation: topToBottom 1.5s steps(44) 0s infinite;
     left: 0;
-    margin-left: -38%;
+    /* margin-left: -38%; */
+    margin: 0 auto;
     bottom: 1%;
     z-index: 50;
 }
@@ -580,18 +581,18 @@ p {
   position: absolute;
   text-align: center;
   min-width: 300px;
-  left: 37%;
-  top: 34%;
+
+  top: 5%;
   /*padding: 65px;*/
   /*background: rgba(255, 255, 255, 0.8);
   outline: 4px double #FFFFFF;
   outline-offset: 8px;*/
-  -webkit-transform: translateX(-69%) translateY(-40%);
-  transform: translateX(-69%) translateY(-40%);
+  -webkit-transform: translateX(-15%) translateY(-0%);
+  transform: translateX(-15%) translateY(-0%);
 }
 #hero-text{
   position: absolute;
-  left:51%;
+  right:0%;
   top:75%;
   text-align: left;
   -webkit-transform:  translateY(-40%);
@@ -619,7 +620,7 @@ p {
   z-index: 1;
   background: url("../img/cover/hero-ux.png") no-repeat center center;
   background-size:contain;
-  width:87%;
+  width:60%;
 }
 
 /*mouse*/
