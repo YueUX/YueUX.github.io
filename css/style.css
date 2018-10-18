@@ -581,23 +581,23 @@ p {
 .hero-content{
 
   text-align: center;
-  min-width: 300px;
+  min-width: 40px;
 
   top: 5%;
   /*padding: 65px;*/
   /*background: rgba(255, 255, 255, 0.8);
   outline: 4px double #FFFFFF;
   outline-offset: 8px;*/
-  -webkit-transform: translateX(-15%) translateY(-0%);
-  transform: translateX(-15%) translateY(-0%);
+  -webkit-transform: translateY(25%);
+  transform: translateY(25%);
 }
 #hero-text{
-  position: absolute;
+
   right:5%;
   top:75%;
   text-align: left;
-  -webkit-transform:  translateY(-40%);
-  transform:  translateY(-75%);
+  -webkit-transform:  translateY(75%);
+  transform:  translateY(75%);
 }
 
 /*----------------------------------------- Velocity - rotating text --------------------------------------------------*/
@@ -621,7 +621,7 @@ p {
   z-index: 1;
   background: url("../img/cover/hero-ux.png") no-repeat center center;
   background-size:contain;
-  width:60%;
+  width:85%;
 }
 
 /*mouse*/
