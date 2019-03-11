@@ -221,16 +221,16 @@
                   </li>
 
                   <li class="col-sm-4">
-                    <a class="mfp-iframe" href="on-the-go.html"><img alt="image" src="img/cover/cover_OnTheGo.png">
+                    <a class="mfp-iframe"  onClick="passWord()"><img alt="image" src="img/cover/cover_Verizon.png" >
                       <div class="decription-wrap">
                         <div class="image-bg">
                            <p class="desc">
-                                 #Mobile Experience
-                             <br>#Smart Transport
-                             <br>#User Journey
-                             <br>#Wireframing & Mid-fi     <!-- Smart Transportation <br> -->
+                                 #Mobile App
+                             <br>#Web application
+                             <br>#End-to-End System design
 
-                             <br><br><span class="desc-sub">A mobile product featuring New York public transport on-the-goers to tackle daily schedule around travel </span>
+
+                             <br><br><span class="desc-sub"></span>
 
                            </p>
                         </div>
@@ -273,7 +273,7 @@
                   </li>
 
                   <li class="col-sm-4">
-                    <a href="chi16.html"><img alt="image" src="img/cover/cover_chi.png">
+                    <a href="chi16.html"><img alt="image" src="img/cover/cover_chi_yellow.png">
                       <div class="decription-wrap">
                         <div class="image-bg">
                           <p class="desc">
@@ -484,7 +484,7 @@
               <div class="col-md-8">
                 <ul class="portfolio-image portfolio-image-tangible">
                   <li class="col-sm-4">
-                    <a href="https://jaxlu.myportfolio.com/cubo"><img alt="image" src="img/UI-cover/cover-cubo.jpeg">
+                    <a href=""><img alt="image" src="img/UI-cover/cover-cubo.jpeg"> //https://jaxlu.myportfolio.com/cubo
                       <div class="decription-wrap">
                         <div class="image-bg">
                            <p class="desc">
@@ -787,6 +787,29 @@
 <script src="js/velocity.min.js"></script>
 <script src="js/velocity.ui.min.js"></script>
 <script src="js/cy.js"></script>
+
+<script>
+  function passWord() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Your Password. For password inquiry, please email:yuechen.ux@gmail.com',' ');
+    while (testV < 3) {
+      if (!pass1)
+        history.go(-1);
+      if (pass1.toLowerCase() == "yc2018") {
+        // alert('You Got it Right!');
+        window.open('Portfolio_2019_Verizon_unEncr.pdf');
+        break;
+      }
+      testV+=1;
+      var pass1 =
+        prompt('Password Incorrect, Please Try Again. For password inquiry, please email:yuechen.ux@gmail.com','Password');
+    }
+
+    if (pass1.toLowerCase()!="password" & testV ==3)
+      history.go(-1);
+      return " ";
+}
+</script>
 
 
   </body>
