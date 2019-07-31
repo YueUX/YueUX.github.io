@@ -30,22 +30,22 @@ $(document).ready(function(){
 
 	// Detect logo dimensions and add correct class
 
-	var logoImage = $('.top-bar .logo:first-of-type');
-
-	var theImage = new Image();
-	theImage.src = logoImage.attr("src");
-
-	var logoWidth = theImage.width;
-	var logoHeight = theImage.height;
-	var logoRatio = logoWidth / logoHeight;
-
-	if(logoRatio > 2.8){
-		$('.top-bar .logo').addClass('logo-wide');
-	}
-
-	if(logoRatio < 2){
-		$('.top-bar .logo').addClass('logo-square');
-	}
+	// var logoImage = $('.top-bar .logo:first-of-type');
+	//
+	// var theImage = new Image();
+	// theImage.src = logoImage.attr("src");
+	//
+	// var logoWidth = theImage.width;
+	// var logoHeight = theImage.height;
+	// var logoRatio = logoWidth / logoHeight;
+	//
+	// if(logoRatio > 2.8){
+	// 	$('.top-bar .logo').addClass('logo-wide');
+	// }
+	//
+	// if(logoRatio < 2){
+	// 	$('.top-bar .logo').addClass('logo-square');
+	// }
 
 	// Smooth scroll
 

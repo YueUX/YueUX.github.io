@@ -45,6 +45,16 @@ section::after {
 	stroke: #fff;
 }
 
+#trianglePath5 {
+	fill: #d5ddda;
+	/* stroke: #fafafa; */
+}
+
+#trianglePath6 {
+	fill: #F6F6F6;
+	/* stroke: #b3bbda; */
+}
+
 
 #wrapper-bg{
 	    background: linear-gradient(45deg, #f2efed 80%, #d8d7d4 100%);
