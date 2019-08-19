@@ -2,6 +2,26 @@ $(document).ready(function(){
 
 	"use strict";
 
+
+	//owlcarousel
+	 $(".owl-carousel").owlCarousel(
+		 {
+		     loop:true,
+		     dots:true,
+				 items:1,
+				 autoplay:true,
+				 autoplayTimeout:3000,
+				
+		 }
+	 );
+
+	 //lightbox
+	 lightbox.option({
+
+	 'wrapAround': true
+ })
+
+
 	// Nav Sticky
 
 	$(window).scroll(function(){
