@@ -717,7 +717,11 @@ ul.portfolio-image li {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  padding-top: 34%;
+  padding-top: 98%;
+}
+
+ul.portfolio-image-prod li {
+  padding-top: 47%;
 }
 
 ul.portfolio-image-ux li {
@@ -731,11 +735,11 @@ ul.portfolio-image-tangible li {
 }
 
 li.portfolio-image-half  {
-  padding-top: 13.5% !important;
+  padding-top: 64% !important;
 }
 
 li.portfolio-image-tall  {
-  padding-top: 42% !important;
+  padding-top: 128% !important;
 }
 
 li.portfolio-image-short  {
