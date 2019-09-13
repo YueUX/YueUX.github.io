@@ -621,8 +621,8 @@ background-size: 100%;
   /*background: rgba(255, 255, 255, 0.8);
   outline: 4px double #FFFFFF;
   outline-offset: 8px;*/
-  -webkit-transform: translateY(23%);
-  transform: translateY(23%);
+  -webkit-transform: translateY(25%);
+  transform: translateY(25%);
 }
 #hero-text{
 
@@ -654,7 +654,7 @@ background-size: 100%;
   z-index: 1;
   background: url("../img/cover/hero-ux.png") no-repeat center center;
   background-size:contain;
-  width:110%;
+  width:128%;
 }
 
 /*mouse*/
