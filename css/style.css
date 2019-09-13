@@ -509,16 +509,50 @@ p {
 
 /*----------------------------------------- 6) Hero --------------------------------------------------*/
 #home {
-   background: linear-gradient(45deg, #eae3df 70%, #d8d7d4 100%);
+   background: linear-gradient(45deg, #F4F0EE 70%, #F1F0ED 100%);
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-width: 100%;
-  min-height: 98%;
+  /* min-height: 98%; */
   height: 100%;
   width: 100%;
   display: block;
+}
+#home .home-content{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+/* #home .bg-color{
+   background: linear-gradient(45deg, #eae3df 70%, #d8d7d4 100%);
+   position:absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 1;
+ } */
+
+#home .bg-img{
+  background-image: url(../img/viz/bg.jpg);
+  opacity:0.12;
+background-size: 100%;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+#home .content{
+
 }
 
 #mouse-wrapper{
@@ -580,24 +614,23 @@ p {
 }
 .hero-content{
 
-  text-align: center;
+  /* text-align: center; */
   min-width: 40px;
-
   top: 5%;
   /*padding: 65px;*/
   /*background: rgba(255, 255, 255, 0.8);
   outline: 4px double #FFFFFF;
   outline-offset: 8px;*/
-  -webkit-transform: translateY(25%);
-  transform: translateY(25%);
+  -webkit-transform: translateY(23%);
+  transform: translateY(23%);
 }
 #hero-text{
 
-  right:5%;
+  /* right:5%; */
   top:75%;
   text-align: left;
-  -webkit-transform:  translateY(75%);
-  transform:  translateY(75%);
+  -webkit-transform:  translateY(52%);
+  transform:  translateY(52%);
 }
 
 /*----------------------------------------- Velocity - rotating text --------------------------------------------------*/
@@ -621,7 +654,7 @@ p {
   z-index: 1;
   background: url("../img/cover/hero-ux.png") no-repeat center center;
   background-size:contain;
-  width:85%;
+  width:110%;
 }
 
 /*mouse*/
