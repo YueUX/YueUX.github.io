@@ -11,12 +11,13 @@
     <link href="favicon.ico" rel="shortcut icon">
 
     <!--styles-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/owl.theme.default.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" type="text/css" rel="stylesheet">
+    <link href="css/owl.theme.default.css"  type="text/css" el="stylesheet">
+    <link href="css/magnific-popup.css" type="text/css"  rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/responsive.css" type="text/css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
 
 
     <!-- <link href="css/owl.theme.css" rel="stylesheet"> -->
@@ -49,9 +50,15 @@
   <body>
     <!--PRELOADER-->
     <div id="preloader">
-        <div height="30%" id="status">
-        <img alt="logo" height="50%" src="img/cover/logo_final.png" style="opacity:0.7;">
-      </div>
+          <div class= "col-md-3 col-xs-6 text-center">
+            <img alt="logo" height="50%" src="img/cover/logo_final.png" style="opacity:0.7;">
+          </div>
+          <div class="loader">
+              <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+              </div>
+          </div>
     </div>
     <!--/.PRELOADER END-->
 
@@ -992,7 +999,7 @@
         // alert('You Got it Right!');
         // window.open('WorkSample_2019_YueChen_vUnenc_optimized.pdf');
         window.open('aim.html');
-              
+
         break;
       }
       testV+=1;
