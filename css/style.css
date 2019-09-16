@@ -115,6 +115,67 @@ img { max-width: 100%; }
   margin-top: -80px;
 }
 
+/*-Pink bouncing dot-*/
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+  text-align: center;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: 1;
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.double-bounce1,
+.double-bounce2 {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #ffcccc;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: bounce 1s infinite ease-in-out;
+	animation: bounce 1s infinite ease-in-out;
+}
+.double-bounce2 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
 
 /*----------------------------------------- 3) Helper --------------------------------------------------*/
 .no-pad {padding: 0 !important; margin: 0 !important;}
